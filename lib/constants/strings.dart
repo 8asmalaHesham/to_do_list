@@ -1,0 +1,9 @@
+const String txtAddNewEvent = "Add New Event";
+const String txtTitle = "Title";
+const String txtDescription = "Description";
+const String txtSelectDate = "Select date";
+const String txtStartTime = "Start time";
+const String txtEndTime = "End time";
+const String txtCreateTask = "Create Task";
+const String txtTaskList = "Task List";
+const String txtSearch = "Search";
