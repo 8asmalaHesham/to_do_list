@@ -104,8 +104,6 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
     );
   }
 
-  // ---------------- UI SECTIONS ----------------
-
   Widget _header() {
     return Container(
       padding: const EdgeInsets.all(18),

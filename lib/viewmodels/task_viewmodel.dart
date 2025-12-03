@@ -9,10 +9,9 @@ class TaskViewModel extends ChangeNotifier {
   List<TaskModel> get tasks => List.unmodifiable(_tasks);
 
   TaskViewModel() {
-    _loadTasks(); // تحميل البيانات عند تشغيل الأبلكيشن
+    _loadTasks();
   }
 
-  // ------------ Shared Preferences (تحميل + حفظ) ------------
 
   Future<void> _loadTasks() async {
     final prefs = await SharedPreferences.getInstance();
@@ -33,8 +32,6 @@ class TaskViewModel extends ChangeNotifier {
     final jsonString = jsonEncode(_tasks.map((e) => e.toMap()).toList());
     await prefs.setString("tasks", jsonString);
   }
-
-  // ---------------- CRUD METHODS ----------------
 
   void addTask(TaskModel task) {
     _tasks.add(task);
